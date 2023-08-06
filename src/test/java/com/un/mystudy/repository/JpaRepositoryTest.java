@@ -1,20 +1,17 @@
 package com.un.mystudy.repository;
 
+import com.un.mystudy.config.JpaConfig;
 import com.un.mystudy.domain.Article;
-import com.un.mystudy.domain.ArticleComment;
-import config.JpaConfig;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.context.annotation.Import;
-import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
 import java.util.Optional;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
 
 @DisplayName("JPA 연결 테스트")
 @Import(JpaConfig.class)

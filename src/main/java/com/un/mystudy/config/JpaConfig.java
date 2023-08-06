@@ -1,4 +1,4 @@
-package config;
+package com.un.mystudy.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -10,8 +10,6 @@ import java.util.Optional;
 @EnableJpaAuditing
 @Configuration
 public class JpaConfig {
-    // 시간에 대해 자동으로 넣어줌
-    // 영속 데이터의 변화를 감지
     @Bean
     public AuditorAware<String> auditorAware() {
         return () -> Optional.of("un");
